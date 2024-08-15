@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes a1 {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+  
+@keyframes a2 {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+
+@keyframes a3 {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }
+  
+
+body{
+    background-image: url("https://wallpaper.dog/large/5486501.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    height: 68px;
+    background-color: rgba(0, 0, 0, 0.634);
+    padding-top: 20px;
+    animation: a3 0.8s ease-out forwards;
+}
+
+.list-container{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(177, 177, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+    font-size: 21px;
+    transition: 0.2s;
+    color: rgb(215, 0, 215);
+}
+
+.name{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.827);
+    width: 580px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.container{
+    width: 100%;
+    height: 660px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.left{
+    width: 60%;
+    animation: a2 1s ease-out forwards;
+    letter-spacing: 1px;
+}
+
+.right{
+    width: 30%;
+}
+
+.top-left
+{
+    margin-top: 135px;
+    margin-left: 50px;
+}
+
+.tl-t, .tl-b {
+    font-size: 45px;
+}
+
+span{
+    color: orange;
+}
+
+.bottom-left{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.right img {
+    border-radius: 50%;
+    width: 375px;
+    margin-top: 90px;
+    margin-left: -70px;
+    border: 2px solid black;
+    animation: a1 0.8s ease-out forwards;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.socials img{
+    border-radius: 50%;
+    width: 40px;
+    cursor: pointer;
+}
+
+.socials img:hover{
+    width: 46px;
+    transition: 0.2s;
+}
+
+.resume
+{
+    width: 140px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: rgb(215, 0, 215);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 48px;
+}
+
+.resume a{
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar{
+        height: 40%;
+    }
+
+    .name {
+        font-size: 30px;
+        width: auto;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .top-left, .bottom-left {
+        margin-left: 0;
+    }
+
+    .right img {
+        width: 250px;
+        margin-left: 0;
+    }
+
+    .tl-t, .tl-b {
+        font-size: 35px;
+    }
+
+    .bottom-left {
+        font-size: 18px;
+    }
+
+    .resume {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tl-t, .tl-b {
+        font-size: 28px;
+    }
+
+    .bottom-left {
+        font-size: 16px;
+    }
+
+    .right img {
+        width: 200px;
+    }
+
+    .resume {
+        width: 120px;
+        height: 50px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+}
